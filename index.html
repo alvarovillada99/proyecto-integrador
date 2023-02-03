@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora Basica</title>
+  </head>
+  <body>
+  <body style="background-color: lightblue;">
+  	<button id="refreshButton" onclick="location.reload();">Refresh</button>
+
+
+    <h1>Calculadora Basica</h1> 
+    <form>
+    <br />	
+      <input type="text" id="expression" disabled; style="position: absolute; top: 275px; left: 470px;" />
+      <br />
+      <br />
+      <input type="button" value="1" onclick="document.getElementById('expression').value+='1'" style="position: absolute; top: 300px; left: 500px;"/> 
+      <input type="button" value="2" onclick="document.getElementById('expression').value+='2'" style="position: absolute; top: 300px; left: 525px;"/>
+      <input type="button" value="3" onclick="document.getElementById('expression').value+='3'" style="position: absolute; top: 300px; left: 550px;"/>
+      <input type="button" value="+" onclick="document.getElementById('expression').value+='+'" style="position: absolute; top: 300px; left: 575px;"/>
+      <br />
+      <input type="button" value="4" onclick="document.getElementById('expression').value+='4'" style="position: absolute; top: 325px; left: 500px;"/>
+      <input type="button" value="5" onclick="document.getElementById('expression').value+='5'" style="position: absolute; top: 325px; left: 525px;"/>
+      <input type="button" value="6" onclick="document.getElementById('expression').value+='6'" style="position: absolute; top: 325px; left: 550px;"/>
+      <input type="button" value="-" onclick="document.getElementById('expression').value+='-'" style="position: absolute; top: 325px; left: 575px;"/>
+      <br />
+      <input type="button" value="7" onclick="document.getElementById('expression').value+='7'" style="position: absolute; top: 350px; left: 500px;"/>
+      <input type="button" value="8" onclick="document.getElementById('expression').value+='8'" style="position: absolute; top: 350px; left: 525px;"/>
+      <input type="button" value="9" onclick="document.getElementById('expression').value+='9'" style="position: absolute; top: 350px; left: 550px;"/>
+      <input type="button" value="*" onclick="document.getElementById('expression').value+='*'" style="position: absolute; top: 350px; left: 575px;"/>
+      <br />
+      <input type="button" value="C" onclick="document.getElementById('expression').value=''" style="position: absolute; top: 375px; left: 500px;"/>
+      <input type="button" value="0" onclick="document.getElementById('expression').value+='0'" style="position: absolute; top: 375px; left: 525px;"/>
+      <input type="button" value="=" onclick="document.getElementById('expression').value=eval(document.getElementById('expression').value)" style="position: absolute; top: 375px; left: 550px;"/>
+      <input type="button" value="/" onclick="document.getElementById('expression').value+='/'" style="position: absolute; top: 375px; left: 575px;"/>
+      <br />
+    </form>
+  </body>
+</html>
